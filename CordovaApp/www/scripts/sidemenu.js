@@ -1,4 +1,6 @@
-﻿
+
+$('.showMenu').show();
+		$('.showMenuClose').hide()
 $("a.showMenu").click(function () {
 	var sidemenu = document.getElementById("sidemenu");
 
@@ -38,10 +40,14 @@ function LoadPageOne() {
 	if (sidemenu.style.left == "-200px") {
 		sidemenu.style.left = "0px";
 		$('[data-role="page"]').addClass('modalBackground');
+		$('.showMenu').show();
+		$('.showMenuClose').hide()
 	}
 	else {
 		sidemenu.style.left = "-200px";
 		$('[data-role="page"]').removeClass('modalBackground');
+		$('.showMenu').show();
+		$('.showMenuClose').hide()
 	}
 }
 
@@ -50,9 +56,13 @@ function LoadPageTwo() {
 	if (sidemenu.style.left == "-200px") {
 		sidemenu.style.left = "0px";
 		$('[data-role="page"]').addClass('modalBackground');
+		$('.showMenu').show();
+		$('.showMenuClose').hide()
 	}
 	else {
 		sidemenu.style.left = "-200px";
 		$('[data-role="page"]').removeClass('modalBackground');
+		$('.showMenu').show();
+		$('.showMenuClose').hide()
 	}
 }
